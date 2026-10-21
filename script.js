@@ -20,7 +20,7 @@ const CONFIG = {
     Saturday:  [["10:00", "14:00"], ["17:00", "21:00"]],
     Sunday:    [["10:00", "14:00"], ["17:00", "21:00"]]
   },
-  siteUrl: "https://implasedental.github.io/",
+  siteUrl: "https://implase.github.io/",
   address: { street: "212/145, Zaminder Road, opposite Ramkrishna Sweet Shop", locality: "Sheoraphuli", region: "West Bengal", postalCode: "712223", country: "IN" }
 };
 

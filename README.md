@@ -16,7 +16,7 @@ assets/img/CREDITS.md   source and photographer of the current stock photos
 - **Phone, WhatsApp, email, Calendar and Maps embeds, Business Profile, social links, opening hours**: edit `CONFIG` at the top of `script.js`. Nothing else in the code repeats these values. Any value left as `"PLACEHOLDER"` is hidden on the page.
 - **Hours** are in 24-hour time, Asia/Kolkata. Each day has a list of `[open, close]` ranges; an empty list means closed. The hours table, the "Open now / Closed now" badge and the search-engine structured data are all generated from this.
 - **Headline, bio, qualifications, treatment descriptions, photo alt text**: edit the text directly in `index.html`. The About section was written from Dr Chandra's CV plus corrections from Dr Chandra.
-- **Site address**: if the site is not at `https://implasedental.github.io/`, search and replace that URL in `index.html` (Open Graph and canonical tags), `script.js` (`siteUrl`), `robots.txt` and `sitemap.xml`.
+- **Site address**: if the site is not at `https://implase.github.io/`, search and replace that URL in `index.html` (Open Graph and canonical tags), `script.js` (`siteUrl`), `robots.txt` and `sitemap.xml`.
 
 ## Replacing the photos
 
@@ -55,7 +55,7 @@ Paste the Business Profile share link (from the **Share** button on your profile
 
 Two options.
 
-**Option A: user site.** Create a repository named exactly `implasedental.github.io` (the GitHub account must be named `implasedental`), push this code to its `main` branch, and the site is live at `https://implasedental.github.io/`. No settings needed.
+**Option A: user site.** The repository is named exactly `implase.github.io` (the GitHub account is `Implase`), push this code to its `main` branch, and the site is live at `https://implase.github.io/`. No settings needed.
 
 **Option B: project site.** Push to any repository, then go to **Settings**, **Pages**, set **Source** to *Deploy from a branch*, choose `main` and `/ (root)`, and save. The site is live at `https://<account>.github.io/<repo>/`. Update the site address as described above.
 
@@ -64,10 +64,10 @@ Two options.
 <!--
 Custom domain later:
 1. Add a file named CNAME in the repo root containing only the domain, e.g. implasedental.in
-2. At the domain registrar, add a CNAME record from www to implasedental.github.io,
+2. At the domain registrar, add a CNAME record from www to implase.github.io,
    and A records for the apex domain to GitHub's Pages IPs (see GitHub docs, "Managing a custom domain").
 3. In Settings > Pages, enter the domain and tick "Enforce HTTPS" once the certificate is issued.
-4. Replace https://implasedental.github.io/ everywhere, as above.
+4. Replace https://implase.github.io/ everywhere, as above.
 -->
 
 ## Local preview
@@ -95,6 +95,6 @@ Then open http://localhost:8000.
 - [ ] Make the implasedc@gmail.com calendar public (see "Booking form and clinic calendar") so the embedded calendar shows for visitors.
 - [ ] Replace the keyless map with the embed from Google Maps or the Business Profile. The keyless map currently drops its pin on a nearby landmark, not the exact shop.
 - [ ] Create the GitHub repository, push, and enable Pages (Option A or B).
-- [ ] If not using `implasedental.github.io`, update the site address in the four files listed above.
+- [ ] If not using `implase.github.io`, update the site address in the four files listed above.
 - [ ] Run Lighthouse in Chrome DevTools on the live site.
 - [ ] Optional: custom domain (see the commented note above).
