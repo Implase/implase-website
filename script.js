@@ -126,7 +126,7 @@ function show(n) {
   const thumb = $("img", items[current]);
   lbImg.src = thumb.currentSrc || items[current].href;
   lbImg.alt = thumb.alt;
-  lbCaption.textContent = thumb.alt;
+  lbCaption.textContent = thumb.dataset.caption || thumb.alt;
 }
 items.forEach((a, n) => a.addEventListener("click", (e) => { e.preventDefault(); show(n); lightbox.showModal(); }));
 $("#lb-prev").addEventListener("click", () => show(current - 1));

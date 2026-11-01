@@ -165,7 +165,7 @@ a:hover { text-decoration-thickness: 2px; }
 .gallery { display: grid; gap: var(--s-2); grid-template-columns: repeat(2, 1fr); }
 @media (min-width: 48em) { .gallery { grid-template-columns: repeat(3, 1fr); gap: var(--s-3); } }
 .gallery a { display: block; border-radius: var(--r-sm); overflow: hidden; }
-.gallery img { transition: transform .2s; }
+.gallery img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; transition: transform .2s; }
 .gallery a:hover img { transform: scale(1.03); }
 #lightbox { border: 0; padding: 0; background: transparent; max-width: 95vw; max-height: 95vh; }
 #lightbox::backdrop { background: rgba(0, 0, 0, .85); }
